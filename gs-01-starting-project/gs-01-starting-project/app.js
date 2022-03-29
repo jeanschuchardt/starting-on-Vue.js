@@ -1,26 +1,26 @@
 Vue.createApp({
-    
-    data(){
+
+    data() {
         return {
-            goals:[],
+            goals: [],
             enteredValue: ''
         };
 
     },
-    methods:{
-        addGoal(){
+    methods: {
+        addGoal() {
             this.goals.push(this.enteredValue);
             this.enteredValue = '';
         }
     }
 
-    }).mount('#app');
+}).mount('#app');
 /* using only JS */
 // const buttonEL  =  document.querySelector('button');
 // const inputEl  =  document.querySelector('input');
 // const listEl  =  document.querySelector('ul');
 
-// function addGoal(){ 
+// function addGoal(){
 //  const enteredValue =  inputEl.value;
 //  const listItemEl =  document.createElement('li');
 //  listItemEl.textContent =  enteredValue;
